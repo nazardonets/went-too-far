@@ -1,3 +1,9 @@
+<!-- FINISHED HERE:https://youtu.be/bn9yIxt_rtg?t=1163 -->
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="ru">
     <head>
@@ -5,40 +11,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WebStudio | Главная</title>
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     </head>
+
     <body>
 
         <!-- Header block -->
-        <header>
-        <nav>
-                <a href="./index.html" title="logo">
-                    <img src="./img/logo.svg" alt="Веб Студия логотип">
-                </a>
-                
-                <ul>
-                    <li><a href="./index.html">Студия</a></li>
-                    <li><a href="./portfolio.html">Портфолио</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
-        </nav>
-            <ul>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
+        <header class="page-header">
+            <div class="container flex-wrapper">
+                <nav class="header-menu">
+                    <div class="logo">
+                        <a href="./index.html" class="logo-text"><span class="--blue">Web</span><span class="--black">Studio</span></a>
+                    </div>
+                    <ul class="site-nav">
+                        <li><a class="--blue" href="./index.html">Студия</a></li>
+                        <li><a class="--dark" href="./portfolio.html">Портфолио</a></li>
+                        <li><a class="--dark" href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-contacts">
+                    <ul class="contacts">
+                        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </div>
+            </div>
         </header>
 
         <!-- Main content -->
-    <main>
-            <div>
-                <section>
-                    <h1>Эффективные решения для вашего бизнеса</h1>
-                    <a href="">Заказать услугу</a>
+        <main>
+            <div class="--bgdark">
+                <section class="hero container">
+                    <h1 class="section-heading1 --white">Эффективные решения для вашего бизнеса</h1>
+                    <a class="btn-main --white" href="">Заказать услугу</a>
                 </section>
             </div>
             
-            <section>
-                <h2>Наши преимущества</h2>
-                <ul>
+            <section class="section container">
+                <h2 hidden>Наши преимущества</h2>
+                <ul class="section-block">
                     <li>
                         <h3>Внимание к деталям</h3>
                         <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -58,55 +70,65 @@
                 </ul>
             </section>
             
-            <section>
-                <h2>Чем мы занимаемся</h2>
-                <ul>
-                    <li><img src="./img/main_1.jpg" alt="Работа за ноутбуком" width="370" height="294"></li>
-                    <li><img src="./img/main_2.jpg" alt="Листание инстика во время работы за ноутбуком" width="370" height="294">
+            <section class="section container">
+                <h2 class="section-heading2 --dark">Чем мы занимаемся</h2>
+                <ul class="section-block">
+                    <li class="section-block__item"><img src="./img/main_1.jpg" alt="Работа за ноутбуком" width="370" height="294"></li>
+                    <li class="section-block__item"><img src="./img/main_2.jpg" alt="Листание инстика во время работы за ноутбуком" width="370" height="294">
                     </li>
-                    <li><img src="./img/main_3.jpg" alt="Разглядывание цветовой палитры на планшене" width="370" height="294"></li>
+                    <li class="section-block__item"><img src="./img/main_3.jpg" alt="Разглядывание цветовой палитры на планшене" width="370" height="294"></li>
                 </ul>
             </section>
             
-            <section>
-                <h2>Наша команда</h2>
-                <ul>
-                    <li>
-                        <img src="./img/team_1.jpg" alt="Игорь Демьяненко">
-                        <h4>Игорь Демьяненко</h4>
-                        <p>Product Designer</p>
-                    </li>
-                    <li>
-                        <img src="./img/team_2.jpg" alt="Ольга Репина">
-                        <h4>Ольга Репина</h4>
-                        <p>Frontend Developer</p>
-                    </li>
-                    <li>
-                        <img src="./img/team_3.jpg" alt="Николай Тарасов">
-                        <h4>Николай Тарасов</h4>
-                        <p>Marketing</p>
-                    </li>
-                    <li>
-                        <img src="./img/team_4.jpg" alt="Михаил Ермаков">
-                        <h4>Михаил Ермаков</h4>
-                        <p>UI Designer</p>
-                    </li>
-                </ul>
+            <section class="section --bglight">
+                <div class="container">
+                <h2 class="section-heading2 --dark">Наша команда</h2>
+                    <ul class="section-block">
+                        <li class="section-block__item">
+                            <div class="section-block__card">
+                                <img src="./img/team_1.jpg" alt="Игорь Демьяненко">
+                                <h3>Игорь Демьяненко</h3>
+                                <p>Product Designer</p>
+                            </div>
+                        </li>
+                        <li class="section-block__item">
+                            <div class="section-block__card">
+                                <img src="./img/team_2.jpg" alt="Ольга Репина">
+                                <h3>Ольга Репина</h3>
+                                <p>Frontend Developer</p>
+                            </div>
+                        </li>
+                        <li class="section-block__item">
+                            <div class="section-block__card">
+                                <img src="./img/team_3.jpg" alt="Николай Тарасов">
+                                <h3>Николай Тарасов</h3>
+                                <p>Marketing</p>
+                            </div>
+                        </li>
+                        <li class="section-block__item">
+                            <div class="section-block__card">
+                                <img src="./img/team_4.jpg" alt="Михаил Ермаков">
+                                <h3>Михаил Ермаков</h3>
+                                <p>UI Designer</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
-    </main>
+        </main>
 
     <!-- Footer block -->
-        <footer>
-            <a href="">
-                <img src="./img/logo_dark.svg" alt="Веб Студия логотип">
-            </a>
-            <address>
-                <ul>
-                    <li>г. Киев, пр-т Леси Украинки, 26</li>
-                    <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <footer class="--bgdark">
+            <div class="footer container">
+                <div class="logo">
+                    <a href="./index.html" class="logo-text"><span class="--blue">Web</span><span class="--white">Studio</span></a>
+                </div>
+                <ul class="footer-menu">
+                    <li><address>г. Киев, пр-т Леси Украинки, 26</address></li>
+                    <li><a class="--light" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="--light" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
-            </address>
+            </div>
         </footer>
     </body>
 </html>
