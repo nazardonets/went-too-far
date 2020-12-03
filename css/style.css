@@ -328,7 +328,7 @@ a {
 	transition: background 0.1s, box-shadow 0.1s, color 0.1s;
 }
 
-.btn-filter a {
+.filter-options a {
 	color: var(--darktext);
 }
 
